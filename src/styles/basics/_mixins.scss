@@ -1,5 +1,0 @@
-$assets: '~@/assets';
-
-@function images($path) {
-  @return url("#{$assets}/images/#{$path}");
-}
