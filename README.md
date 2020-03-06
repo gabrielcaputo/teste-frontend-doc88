@@ -1,6 +1,7 @@
 # Front-end Challenge - Doc88
 
 Teste desenvolvido para a vaga de front-end na Doc88.
+
 [https://gabrielcaputo.github.io/teste-frontend-doc88/](https://gabrielcaputo.github.io/teste-frontend-doc88/)
 
 ## Setup inicial do projeto
