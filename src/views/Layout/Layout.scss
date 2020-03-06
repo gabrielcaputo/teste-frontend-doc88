@@ -1,0 +1,87 @@
+#layout {
+  width: 100%;
+  min-height: 100vh;
+  background-image: images("pattern.png");
+  background-position: top center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    background: transparent radial-gradient(closest-side at 50% 50%, #ffffff 0%, #ffffff 67%, #ffffff00 100%) 0% 0% no-repeat padding-box;
+  }
+
+  header {
+    background-image: images("wave.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    position: relative;
+
+    > .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      max-width: 100%;
+      width: 63%;
+      margin-top: 5%;
+      margin-bottom: 20.5%;
+      margin-left: -12%;
+      pointer-events: none;
+      user-select: none;
+      display: flex;
+
+      @media screen and (max-width: 960px) {
+        margin-bottom: 23.5%;
+      }
+
+      img {
+        max-height: 17.5vw;
+
+        &:last-of-type {
+          margin-left: -6%;
+        }
+      }
+    }
+
+    .pastel-01 {
+      left: -28%;
+      width: 51%;
+      position: absolute;
+      z-index: 3;
+      pointer-events: none;
+      @media screen and (max-width: 960px) {
+        left: -32%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .pastel-02 {
+      pointer-events: none;
+      user-select: none;
+      position: absolute;
+      bottom: 9%;
+      right: -2.5%;
+      width: 34.5%;
+    }
+  }
+}
+
+main {
+  margin-top: -18%;
+  z-index: 1;
+  position: relative;
+  @media screen and (min-width: 1220px) {
+    margin-top: -220px;
+  }
+}

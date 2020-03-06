@@ -1,0 +1,126 @@
+.menu-item {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 35px;
+
+    &-image {
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        top: 20px;
+        border-radius: 10px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #eee;
+        box-shadow: 0 0 5px $light-red;
+
+        @media screen and (max-width: 780px) {
+            width: 100px;
+            height: 100px;
+        }
+        
+    }
+
+    &-box {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 30px $light-red;
+        width: calc(100% - 110px);
+        margin: 0 0 0 110px;
+        min-height: 220px;
+
+        @media screen and (max-width: 780px) {
+            margin: 0 0 0 20px;
+            width: calc(100% - 20px);
+        }
+    }
+    
+    &-header {
+        background: $red;
+        border-radius: 20px 20px 0 0;
+        padding: 20px 40px 20px 110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 780px) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px 40px 20px 100px;
+        }
+        
+    }
+
+    &-title {
+        color: $yellow;
+        font-weight: 700;
+        font-size: 30px;
+        font-style: italic;
+
+        @media screen and (max-width: 960px) {
+            font-size: 24px;
+        }
+        @media screen and (max-width: 780px) {
+            font-size: 20px;
+        }
+    }
+
+    &-price {
+        input {
+            color: #fff;
+            font-weight: 700;
+            font-size: 26px;
+            font-style: italic;
+            background: none;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+            height: auto;
+            width: auto;
+            min-width: initial;
+
+            @media screen and (max-width: 960px) {
+                font-size: 20px;
+            }
+            @media screen and (max-width: 780px) {
+                direction: ltr;
+                font-size: 16px;
+            }
+
+            &:focus,
+            &:active {
+                border-color: transparent !important;
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+
+    &-flavor,
+    &-description {
+        color: $dark-red;
+        font-size: 24px;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 960px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 780px) {
+            font-size: 16px;
+        }
+
+        strong{
+            font-style: italic;
+        }
+    }
+
+    &-content {
+        padding: 25px 40px 25px 110px;
+        @media screen and (max-width: 780px) {
+            padding: 25px 40px 25px 100px;
+        }
+    }
+}
